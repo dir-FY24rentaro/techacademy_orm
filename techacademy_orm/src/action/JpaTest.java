@@ -8,10 +8,10 @@ import util.DBUtil;
 public class JpaTest {
 
     public static void main(String[] args) {
-     // EntityManagerのオブジェクトを生成
+     // EntityManagerのオブジェクト生成
         EntityManager em = DBUtil.createEntityManager();
 
-        // 1件取得して名前を表示する
+        // 1件取得して名前表示する
         City city = em.find(City.class, 1);
         System.out.println(city.getName());
 

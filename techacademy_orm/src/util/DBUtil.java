@@ -8,7 +8,7 @@ public class DBUtil {
     private static final String PERSISTENCE_UNIT_NAME = "techacademy_orm";
     private static EntityManagerFactory emf;
 
-    public static EntityManager createEntityManager() {
+    public static EntityManager createEntityManager(){
         return getEntityManagerFactory().createEntityManager();
     }
 
